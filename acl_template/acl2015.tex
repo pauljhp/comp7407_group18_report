@@ -1,0 +1,128 @@
+%
+% File acl2015.tex
+%
+% Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn
+%%
+%% Based on the style files for ACL-2014, which were, in turn,
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt]{article}
+\usepackage{acl2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage[hidelinks]{hyperref}
+%\setlength\titlebox{5cm}
+\usepackage{xcolor}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+
+\title{Investigation on different models with Pruning-based Probing}
+
+\author{Ng Ho Hin \\
+        {\tt 3035754155} \\
+        {\tt hhng1@connect.hku.hk} \\
+        {\bf Peng Jianhong} \\
+        {\tt 3035906980} \\
+        {\tt ppeng60@connect.hku.hk} \\\And
+        Gao Peiyan \\
+        {\tt 2013518343} \\
+        {\tt h1351834@connect.hku.hk} \\
+        {\bf Mao Xiyu} \\
+        {\tt 3036034992} \\
+        {\tt u3603499@connect.hku.hk}}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  In the paper {\em Low-Complexity Probing via Finding Subnetworks} (Cao et al., 2021), they proposed a pruning-based probing approach, as a way of learning the sub-network of a pre-trained bert model to do a specific langusge task. \\ We reproducing the experiment of the original paper, \\ applying pruning-based probing to different model with bases and different specified tasks
+  
+\end{abstract}
+
+\section{Introduction}
+Probing is a way of glimpsing how a model captures some specific linguistic information \cite{Tenney}.\\
+Before, the probing method is either linear or MLP, but hard to make the trade off between the probe being representative and the ability of the probe learning the data independently  \\
+In {\em Low-Complexity Probing via Finding Subnetworks}, Cao et al. proposed the pruning-based probing method which\\
+Improvement in both performance and complexity \\
+By applying to different models, \\
+In section 2, we will talk about \\
+In section 3, we will present the experiments we have done to \\
+In section 4, we will compare experiment outcomes and give conclusion \\
+\section{Background and Related works}
+\subsection{Probing}
+{\bf Pruning-based Subnetwork finding.} The probe is obtained by setting a subset of the original weights to zero by gradient descent.
+\subsection{Complexity measurement}
+\section{Experiment}
+\subsection{Result reproduction: on bert-base-uncased}
+\subsection{Experiments on BERT based models}
+\subsection{Experiments on other models}
+\section{Result comparison}
+\section{Further work}
+{\bf Linguistic feature capturing}
+\section{Conclusion}
+
+
+
+
+
+
+
+% include your own bib file like this:
+%\bibliographystyle{acl}
+%\bibliography{acl2015}
+
+\begin{thebibliography}{}
+
+
+\bibitem [\protect\citename{Tenney et al.}2019]
+{Tenney}
+Ian Tenney, Dipanjan Das, and Ellie Pavlick.2019.
+\newblock{\href{https://arxiv.org/abs/1905.05950}{BERT rediscovers the classical NLP pipeline.} In}
+\newblock{\em Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,}
+ \newblock {pages 4593– 4601, Florence, Italy. Association for Computational Linguistics.}
+
+
+
+
+\bibitem[\protect\citename{{American Psychological Association}}1983]{APA:83}
+{American Psychological Association}.
+\newblock 1983.
+\newblock {\em Publications Manual}.
+\newblock American Psychological Association, Washington, DC.
+
+\bibitem[\protect\citename{{Association for Computing Machinery}}1983]{ACM:83}
+{Association for Computing Machinery}.
+\newblock 1983.
+\newblock {\em Computing Reviews}, 24(11):503--512.
+
+\bibitem[\protect\citename{Chandra \bgroup et al.\egroup }1981]{Chandra:81}
+Ashok~K. Chandra, Dexter~C. Kozen, and Larry~J. Stockmeyer.
+\newblock 1981.
+\newblock Alternation.
+\newblock {\em Journal of the Association for Computing Machinery},
+  28(1):114--133.
+
+\bibitem[\protect\citename{Gusfield}1997]{Gusfield:97}
+Dan Gusfield.
+\newblock 1997.
+\newblock {\em Algorithms on Strings, Trees and Sequences}.
+\newblock Cambridge University Press, Cambridge, UK.
+
+\end{thebibliography}
+
+\end{document}
